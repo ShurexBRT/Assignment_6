@@ -1,32 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Assignment_6</title>
 
     <style>
-        body {
-            background-color: #050210;
+      body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #050210;
+      }
+      .box {
+        position: relative;
+        width: 400px;
+        height: 400px;
+        margin: 0 auto;
+        border-radius: 50%;
+        background: linear-gradient(#fb5dad, #55fb9f, #b97aff);
+        animation: animacija 1s linear infinite;
+      }
+      .box1 {
+        position: relative;
+        width: 400px;
+        height: 400px;
+        margin: 0 auto;
+        border-radius: 50%;
+        filter: blur(30px);
+        background: linear-gradient(#fb5dad, #55fb9f, #b97aff);
+        animation: animacija 1s linear infinite;
+      }
+
+      .boxx {
+        right: 20px;
+        left: 20px;
+        top: 20px;
+        bottom: 20px;
+        border-radius: 50%;
+        background-color: #050210;
+        position: absolute;
+      }
+
+      @keyframes animacija {
+        0% {
+          transform: rotate(0deg);
         }
-
-
-
-        .krug {}
+        100% {
+          transform: rotate(360deg);
+        }
+      }
     </style>
-
-
-
-</head>
-
-<body>
-
-    <div class="krug">
-
+  </head>
+  <body>
+    <div class="box" id="box-1">
+      <div class="box1" id="box1"></div>
+      <div class="boxx" id="boxx-1"></div>
     </div>
-
-</body>
-
+  </body>
 </html>
